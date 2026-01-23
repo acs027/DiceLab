@@ -1,0 +1,48 @@
+{
+  "title": "Privacy Policy",
+  "lastUpdated": "January 2026",
+  "headerIcon": "hand.raised.fill",
+  "sections": [
+    {
+      "title": "Your Privacy Matters",
+      "content": "At DiceLab, we are committed to protecting your privacy. We believe in transparency and want you to understand exactly how we handle your information."
+    },
+    {
+      "title": "No Data Collection",
+      "boldText": "DiceLab does not collect, store, or transmit any personal data.",
+      "content": "We have designed the app to work entirely on your device without requiring any network connection or data transmission."
+    },
+    {
+      "title": "Local Storage Only",
+      "content": "All your custom dice, dice sets, and preferences are stored locally on your device using iOS's built-in storage mechanisms. This data never leaves your device and is not accessible to us or any third parties."
+    },
+    {
+      "title": "No Analytics or Tracking",
+      "content": "DiceLab does not use any analytics services, tracking tools, or advertising networks. We don't track your usage, collect crash reports, or gather any information about how you use the app."
+    },
+    {
+      "title": "No Third-Party Services",
+      "content": "The app operates independently without connecting to any external servers or third-party services. All functionality is provided locally on your device."
+    },
+    {
+      "title": "Siri Integration",
+      "content": "When you use Siri to roll dice, the voice commands are processed by Apple's Siri service on your device. DiceLab does not receive or store any voice data or Siri interactions."
+    },
+    {
+      "title": "Widgets",
+      "content": "Home screen widgets operate entirely on your device and do not require any network access or data transmission."
+    },
+    {
+      "title": "Changes to This Policy",
+      "content": "If we make any changes to this privacy policy, we will update the \"Last Updated\" date at the top of this page. Since we don't collect any data, any changes would only be to clarify our existing practices."
+    },
+    {
+      "title": "Contact Us",
+      "content": "If you have any questions about this privacy policy or our data practices, please feel free to contact us through the App Store listing."
+    }
+  ],
+  "summary": {
+    "icon": "checkmark.shield.fill",
+    "text": "Summary: DiceLab collects zero data. Everything stays on your device."
+  }
+}

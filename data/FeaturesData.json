@@ -1,0 +1,46 @@
+{
+  "title": "Features",
+  "description": "Everything you need for the perfect dice rolling experience",
+  "features": [
+    {
+      "icon": "cube.fill",
+      "title": "2D Dice Simulation",
+      "description": "Roll realistic 2D dice with smooth animations that bring your rolls to life."
+    },
+    {
+      "icon": "square.grid.2x2.fill",
+      "title": "Built-in Dice Presets",
+      "description": "Includes standard 6-sided dice and popular D&D dice (D4, D6, D8, D10, D12, D20)."
+    },
+    {
+      "icon": "paintbrush.fill",
+      "title": "Custom Dice Creation",
+      "description": "Create your own dice with fully customizable faces to match your unique style."
+    },
+    {
+      "icon": "square.and.pencil",
+      "title": "Editable Dice Faces",
+      "description": "Each face can be customized using SF Symbols, Images, or Text for endless possibilities."
+    },
+    {
+      "icon": "folder.fill",
+      "title": "Dice Sets",
+      "description": "Group dice into custom DiceSets and easily save and load them later for quick access."
+    },
+    {
+      "icon": "mic.fill",
+      "title": "Siri Integration",
+      "description": "Roll a standard 6-sided die or D&D dice using Siri voice commands for hands-free rolling."
+    },
+    {
+      "icon": "square.on.square.fill",
+      "title": "Home Screen Widgets",
+      "description": "Roll dice directly from widgets with multiple sizes. Dice count adapts to widget size for optimal layout."
+    },
+    {
+      "icon": "externaldrive.fill",
+      "title": "Persistent Storage",
+      "description": "All custom dice and DiceSets are saved and available across app launches."
+    }
+  ]
+}
