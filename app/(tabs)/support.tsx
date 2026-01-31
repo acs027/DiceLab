@@ -1,15 +1,14 @@
-import { ScrollView, StyleSheet, Platform, TouchableOpacity, View, Image } from 'react-native';
+import { ScrollView, StyleSheet, Platform, TouchableOpacity, View } from 'react-native';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { IconSymbol } from '@/components/ui/icon-symbol';
 import { useColorScheme } from '@/hooks/use-color-scheme';
 import { Colors } from '@/constants/theme';
 import { ExternalLink } from '@/components/external-link';
-import Features from '@/components/features';
+import SocialView from '@/components/SocialView';
 import AvatarCircle from '@/components/avatar-circle';
 
-export default function HomeScreen() {
-  document.title = "DiceLab";
+export default function SupportScreen() {
   const colorScheme = useColorScheme();
   const tintColor = Colors[colorScheme ?? 'light'].tint;
   const backgroundColor = Colors[colorScheme ?? 'light'].background;
@@ -18,15 +17,10 @@ export default function HomeScreen() {
   return (
     <ThemedView style={styles.container}>
       <View style={styles.header}>
-        <ExternalLink href="https://developer-site-url.com">
+        <ExternalLink href="https://www.alicihansarac.com/">
           <TouchableOpacity style={styles.avatarButton}>
             <View style={[styles.avatar, { backgroundColor: tintColor }]}>
-              {/* <IconSymbol name="person.fill" size={24} color={backgroundColor} /> */}
-              {/* <Image 
-              source={require('@/assets/images/profile.png')} 
-              style={styles.profileImage}
-            /> */}
-            <AvatarCircle />
+              <AvatarCircle />
             </View>
           </TouchableOpacity>
         </ExternalLink>
@@ -38,35 +32,23 @@ export default function HomeScreen() {
         showsVerticalScrollIndicator={false}>
         <ThemedView style={styles.heroSection}>
           <ThemedView style={styles.heroContent}>
-            {/* <IconSymbol name="cube.transparent.fill" size={80} color={tintColor} style={styles.heroIcon} />
-             */}
-
-             <Image 
-              source={require('@/assets/images/diceapp-icon.png')} 
-              style={styles.appIcon}
-            />
+            <IconSymbol name="questionmark.circle.fill" size={80} color={tintColor} style={styles.heroIcon} />
             <ThemedText type="title" style={styles.heroTitle}>
-              DiceLab
+              Support
             </ThemedText>
             <ThemedText style={styles.heroSubtitle}>
-              The ultimate dice rolling experience for iOS
+              We're here to help
             </ThemedText>
             <ThemedText style={styles.heroDescription}>
-              Roll dice with style. Create custom dice, organize them into sets, and roll from anywhere with widgets and Siri.
+              If you have any questions, feedback, or need support with DiceLab, feel free to reach out!
+              I'm always happy to hear from users and will do my best to respond promptly.
             </ThemedText>
-            
-            <ExternalLink href="https://apps.apple.com/app/dicelab">
-              <TouchableOpacity style={[styles.appStoreButton, { backgroundColor: textColor }]}>
-                <IconSymbol name="apple.logo" size={20} color={backgroundColor} />
-                <ThemedText style={[styles.appStoreButtonText, { color: backgroundColor }]}>
-                  Download on the App Store
-                </ThemedText>
-              </TouchableOpacity>
-            </ExternalLink>
           </ThemedView>
         </ThemedView>
 
-        <Features />
+        <ThemedView style={styles.socialSection}>
+          <SocialView />
+        </ThemedView>
 
       </ScrollView>
     </ThemedView>
@@ -114,16 +96,6 @@ const styles = StyleSheet.create({
     maxWidth: 600,
     width: '100%',
   },
-   appIcon: {
-    width: 120,
-    height: 120,
-    borderRadius: 27,
-    marginBottom: 24,
-  },
-   profileImage: {
-    width: 48,
-    height: 48,
-  },
   heroIcon: {
     marginBottom: 20,
   },
@@ -148,19 +120,8 @@ const styles = StyleSheet.create({
     maxWidth: 500,
     marginBottom: 32,
   },
-  appStoreButton: {
-    flexDirection: 'row',
+  socialSection: {
+    paddingHorizontal: 20,
     alignItems: 'center',
-    justifyContent: 'center',
-    paddingVertical: 12,
-    paddingHorizontal: 24,
-    borderRadius: 12,
-    gap: 8,
-    marginTop: 8,
-    minWidth: 200,
-  },
-  appStoreButtonText: {
-    fontSize: 16,
-    fontWeight: '600',
   },
 });

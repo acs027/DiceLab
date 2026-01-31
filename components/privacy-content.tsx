@@ -46,12 +46,12 @@ export default function PrivacyContent() {
   return (
     <>
       <ThemedView style={styles.headerSection}>
-        <IconSymbol 
+        {/* <IconSymbol 
           name={PrivacyData.headerIcon} 
           size={60} 
           color={tintColor} 
           style={styles.headerIcon} 
-        />
+        /> */}
         <ThemedText type="title" style={styles.headerTitle}>
           {PrivacyData.title}
         </ThemedText>
@@ -79,11 +79,11 @@ export default function PrivacyContent() {
                   : 'rgba(10, 126, 164, 0.2)',
             },
           ]}>
-          <IconSymbol
+          {/* <IconSymbol
             name={PrivacyData.summary.icon}
             size={32}
             color={tintColor}
-          />
+          /> */}
           <ThemedText type="defaultSemiBold" style={styles.summaryText}>
             {PrivacyData.summary.text}
           </ThemedText>

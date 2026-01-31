@@ -3,6 +3,7 @@ import { ThemedView } from '@/components/themed-view';
 import PrivacyContent from '@/components/privacy-content';
 
 export default function PrivacyScreen() {
+  document.title = "DiceLab - Privacy Policy";
   return (
     <ThemedView style={styles.container}>
       <ScrollView

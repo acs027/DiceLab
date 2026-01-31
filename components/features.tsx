@@ -30,7 +30,7 @@ function FeatureCard({ icon, title, description }: FeatureCardProps) {
 
   return (
     <ThemedView style={[styles.featureCard, { backgroundColor: cardBackgroundColor, borderColor }]}>
-      <IconSymbol name={icon} size={40} color={tintColor} />
+      {/* <IconSymbol name={icon} size={40} color={tintColor} /> */}
       <ThemedText type="subtitle" style={styles.featureTitle}>
         {title}
       </ThemedText>
