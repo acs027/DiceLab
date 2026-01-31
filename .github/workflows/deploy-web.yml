@@ -26,6 +26,9 @@ jobs:
       - name: Export Expo Web Build
         run: npx expo export -p web
 
+      - name: Remove .gitignore from dist
+        run: rm -f dist/.gitignore
+
       - name: Set Git identity
         run: |
           git config --global user.email "acs027@users.noreply.github.com"
