@@ -1,0 +1,41 @@
+name: Deploy Expo Web
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Install Expo CLI
+        run: npx expo install
+
+      - name: Export Expo Web Build
+        run: npx expo export -p web
+
+      - name: Set Git identity
+        run: |
+          git config --global user.email "acs027@users.noreply.github.com"
+          git config --global user.name "acs027"
+
+      - name: Deploy to Github Pages repo
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npx gh-pages --nojekyll -d dist \
+            --repo "https://x-access-token:${GITHUB_TOKEN}@github.com/acs027/DiceLab.git" \
+            --branch gh-pages \
+            --message "Deploy"
