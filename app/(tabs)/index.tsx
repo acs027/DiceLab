@@ -18,7 +18,7 @@ export default function HomeScreen() {
   return (
     <ThemedView style={styles.container}>
       <View style={styles.header}>
-        <ExternalLink href="https://developer-site-url.com">
+        <ExternalLink href="https://www.alicihansarac.com/">
           <TouchableOpacity style={styles.avatarButton}>
             <View style={[styles.avatar, { backgroundColor: tintColor }]}>
               {/* <IconSymbol name="person.fill" size={24} color={backgroundColor} /> */}
@@ -55,7 +55,7 @@ export default function HomeScreen() {
               Roll dice with style. Create custom dice, organize them into sets, and roll from anywhere with widgets and Siri.
             </ThemedText>
             
-            <ExternalLink href="https://apps.apple.com/app/dicelab">
+            <ExternalLink href="https://apps.apple.com/us/app/dicelab/id6755301005">
               <TouchableOpacity style={[styles.appStoreButton, { backgroundColor: textColor }]}>
                 <IconSymbol name="apple.logo" size={20} color={backgroundColor} />
                 <ThemedText style={[styles.appStoreButtonText, { color: backgroundColor }]}>
